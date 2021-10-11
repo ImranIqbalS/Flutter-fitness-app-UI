@@ -194,6 +194,62 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+            SizedBox(
+              height: 5,
+            ),
+            //banner section
+            Container(
+              height: 180,
+              width: MediaQuery.of(context).size.width,
+              child: Stack(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 30),
+                    width: MediaQuery.of(context).size.width,
+                    height: 120,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: DecorationImage(
+                        image: AssetImage(
+                          "assets/card.jpg",
+                        ),
+                        fit: BoxFit.fill,
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 40,
+                          offset: Offset(8, 10),
+                          color: color.AppColor.gradientSecond.withOpacity(0.3),
+                        ),
+                        BoxShadow(
+                          blurRadius: 10,
+                          offset: Offset(-1, -5),
+                          color: color.AppColor.gradientSecond.withOpacity(0.3),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 200,
+                    width: MediaQuery.of(context).size.width,
+                    margin: EdgeInsets.only(
+                      right: 200,
+                      bottom: 30,
+                    ),
+                    decoration: BoxDecoration(
+                      // color: Colors.red.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(20),
+                      image: DecorationImage(
+                        image: AssetImage(
+                          "assets/figure.png",
+                        ),
+                        // fit: BoxFit.fill,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
