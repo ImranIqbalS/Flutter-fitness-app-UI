@@ -81,7 +81,38 @@ class _HomePageState extends State<HomePage> {
                   color: color.AppColor.homePageIcons,
                 ),
               ],
-            )
+            ),
+            SizedBox(height: 20),
+            //next workout container
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: 220,
+              //decoration for next workout section
+              decoration: BoxDecoration(
+                // color: Colors.blue,
+                gradient: LinearGradient(
+                  colors: [
+                    color.AppColor.gradientFirst.withOpacity(0.8),
+                    color.AppColor.gradientSecond.withOpacity(0.9),
+                  ],
+                  begin: Alignment.bottomLeft,
+                  end: Alignment.centerRight,
+                ),
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  bottomRight: Radius.circular(10),
+                  bottomLeft: Radius.circular(10),
+                  topRight: Radius.circular(8 / 0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    offset: Offset(5, 10),
+                    blurRadius: 20,
+                    color: color.AppColor.gradientSecond.withOpacity(0.2),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
