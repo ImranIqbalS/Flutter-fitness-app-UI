@@ -17,6 +17,7 @@ class _HomePageState extends State<HomePage> {
         padding: EdgeInsets.only(top: 70, left: 30, right: 30),
         child: Column(
           children: [
+            //heading text and icons buttons
             Row(
               children: [
                 Text(
@@ -46,6 +47,36 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Icon(
                   Icons.arrow_forward_ios,
+                  size: 20,
+                  color: color.AppColor.homePageIcons,
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            //home page subtitle
+            Row(
+              children: [
+                Text(
+                  "your program",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: color.AppColor.homePageSubtitle,
+                  ),
+                ),
+                Expanded(child: Container()),
+                Text(
+                  "Details",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: color.AppColor.homePageDetail,
+                  ),
+                ),
+                SizedBox(width: 5),
+                Icon(
+                  Icons.arrow_forward,
                   size: 20,
                   color: color.AppColor.homePageIcons,
                 ),
