@@ -247,6 +247,44 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
+                  Container(
+                    width: double.maxFinite,
+                    height: 100,
+                    color: Colors.redAccent.withOpacity(0.3),
+                    margin: EdgeInsets.only(
+                      left: 150,
+                      top: 50,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "You are doing great",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: color.AppColor.homePageDetail,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        RichText(
+                          text: TextSpan(
+                              text: "keep it up\n",
+                              style: TextStyle(
+                                color: color.AppColor.homePagePlanColor,
+                                fontSize: 16,
+                              ),
+                              children: [
+                                TextSpan(
+                                  text: "stick to your plan",
+                                ),
+                              ]),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
